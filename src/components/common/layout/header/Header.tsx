@@ -45,9 +45,6 @@ export function Header() {
       data-active={location.pathname.endsWith(item.link)}
       onClick={() => {
         closeDrawer();
-        console.log("location pathnaem: ", location.pathname);
-        console.log("item link: ", item.link);
-        console.log("ends with: ", location.pathname.endsWith(item.link));
       }}
     >
       {item.label}
