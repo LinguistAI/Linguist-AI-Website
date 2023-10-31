@@ -13,7 +13,7 @@ import {
 import { useDisclosure } from "@mantine/hooks";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import classes from "./Header.module.css";
 
 const userLinks = [
@@ -33,19 +33,21 @@ const mainLinks = [
 ];
 
 export function Header() {
+  const location = useLocation();
   const [opened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
-  const [activeLink, setActiveLink] = useState(0);
 
   const mainItems = mainLinks.map((item, index) => (
     <Link
       to={item.link}
       key={item.label}
       className={classes.mainLink}
-      data-active={index === activeLink || undefined}
+      data-active={location.pathname.endsWith(item.link)}
       onClick={() => {
         closeDrawer();
-        setActiveLink(index);
+        console.log("location pathnaem: ", location.pathname);
+        console.log("item link: ", item.link);
+        console.log("ends with: ", location.pathname.endsWith(item.link));
       }}
     >
       {item.label}
@@ -68,11 +70,7 @@ export function Header() {
     <header className={classes.header}>
       <Container className={classes.inner}>
         <Group justify="flex-start">
-          <Link
-            to="/"
-            className={classes.logoLink}
-            onClick={() => setActiveLink(0)}
-          >
+          <Link to="/" className={classes.logoLink}>
             <Title order={1} c="cyan">
               LinguistAI
             </Title>
