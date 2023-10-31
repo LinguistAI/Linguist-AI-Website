@@ -18,7 +18,7 @@ import classes from "./Header.module.css";
 
 const userLinks = [
   {
-    link: "https://github.com/linguist-ai",
+    link: "https://github.com/LinguistAI/",
     label: "",
     icon: <IconBrandGithubFilled />,
     target: "_blank",

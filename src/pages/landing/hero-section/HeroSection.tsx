@@ -35,7 +35,7 @@ export function HeroSection() {
           <Button
             component="a"
             target="_blank"
-            href="https://github.com/linguist-ai"
+            href="https://github.com/LinguistAI/"
             size="xl"
             variant="default"
             className={classes.control}
