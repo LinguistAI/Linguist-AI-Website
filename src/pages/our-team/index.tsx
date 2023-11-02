@@ -1,4 +1,4 @@
-import { Box, Container, Flex, List, Stack, Title } from "@mantine/core";
+import { Box, Container, Flex, Stack, Title } from "@mantine/core";
 import { TeamMemberInfoCard } from "./TeamMemberInfoCard";
 
 const OurTeam = () => {
