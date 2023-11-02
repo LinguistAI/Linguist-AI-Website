@@ -1,4 +1,4 @@
-import { Box, Container, Flex, List, Stack, Title } from "@mantine/core";
+import { Box, Container, Flex, Stack, Title } from "@mantine/core";
 import { TeamMemberInfoCard } from "./TeamMemberInfoCard";
 
 const OurTeam = () => {
@@ -10,7 +10,7 @@ const OurTeam = () => {
           <Flex align="center" direction="column" gap={20}>
             <Flex
               direction={{ base: "column", sm: "row" }}
-              gap={{ base: "xl", sm: "xs" }}
+              gap={{ base: "xl", sm: "xl" }}
             >
               <TeamMemberInfoCard
                 name="Kardelen Ceren"
@@ -34,18 +34,24 @@ const OurTeam = () => {
               />
             </Flex>
           </Flex>
-          <Stack>
-            <Title order={2}>Our Supervisor</Title>
-            <List>
-              <List.Item>Halil Altay Güvenir</List.Item>
-            </List>
-          </Stack>
-          <Stack>
-            <Title order={2}>Our Innovation Expert</Title>
-            <List>
-              <List.Item>Ahmet Eren Başak</List.Item>
-            </List>
-          </Stack>
+          <Flex gap="xl" direction={{ base: "column", sm: "row" }}>
+            <Stack style={{ flex: 1 }}>
+              <Title order={2}>Our Supervisor</Title>
+
+              <TeamMemberInfoCard
+                name="Halil Altay Güvenir"
+                imgSrc="/images/team/halil-altay-guvenir.jpg"
+              />
+            </Stack>
+            <Stack style={{ flex: 1 }}>
+              <Title order={2}>Our Innovation Expert</Title>
+
+              <TeamMemberInfoCard
+                name="Ahmet Eren Başak"
+                imgSrc="/images/team/ahmet-eren-basak.jpeg"
+              />
+            </Stack>
+          </Flex>
         </Flex>
       </Box>
     </Container>
