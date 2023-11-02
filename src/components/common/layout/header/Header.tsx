@@ -12,7 +12,6 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { IconBrandGithubFilled } from "@tabler/icons-react";
-import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import classes from "./Header.module.css";
 
@@ -37,7 +36,7 @@ export function Header() {
   const [opened, { toggle: toggleDrawer, close: closeDrawer }] =
     useDisclosure(false);
 
-  const mainItems = mainLinks.map((item, index) => (
+  const mainItems = mainLinks.map((item) => (
     <Link
       to={item.link}
       key={item.label}
