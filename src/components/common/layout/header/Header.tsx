@@ -29,6 +29,7 @@ const mainLinks = [
   { link: "/team", label: "Our Team" },
   { link: "/reports", label: "Reports" },
   { link: "/privacy", label: "Privacy" },
+  { link: "/data", label: "Data" },
   // { link: "/about-us", label: "About Us" },
 ];
 

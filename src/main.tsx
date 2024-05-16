@@ -3,6 +3,7 @@ import "@mantine/core/styles.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import DeleteAccountPage from "./pages/DeleteAccountPage.tsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
 import NotFound from "./pages/error/NotFound.tsx";
 import LandingPage from "./pages/landing/index.tsx";
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "/reports", element: <Reports /> },
       { path: "/team", element: <OurTeam /> },
       { path: "/privacy", element: <PrivacyPolicy /> },
+      { path: "/data", element: <DeleteAccountPage /> },
     ],
   },
   { path: "*", element: <NotFound /> },

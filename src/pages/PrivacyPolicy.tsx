@@ -12,7 +12,7 @@ const PrivacyPolicy = () => {
   return (
     <Container size="md" my={40}>
       <Paper shadow="xs" p="md">
-        <Stack spacing="md">
+        <Stack gap="md">
           <Title order={1}>Privacy Policy</Title>
           <Text>Last updated: May 01, 2024</Text>
           <Text>
