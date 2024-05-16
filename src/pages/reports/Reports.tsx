@@ -11,15 +11,24 @@ const Reports = () => {
           </Anchor>
           <Anchor
             target="_blank"
-            href="/pdf/reports/T2314_Analysis_and_Requirements_Report.pdf"
+            href="/pdf/reports/T2314_Project_Specification_Document.pdf"
           >
             Project Specification Report
           </Anchor>
           <Anchor
+            href="/pdf/reports/T2314_Analysis_and_Requirements_Report.pdf"
             target="_blank"
-            href="/pdf/reports/T2314_Project_Specification_Document.pdf"
           >
             Analysis and Requirements Report
+          </Anchor>
+          <Anchor
+            href="/pdf/reports/T2314_Detailed_Design_report.docx"
+            target="_blank"
+          >
+            Detailed Design Report
+          </Anchor>
+          <Anchor href="/pdf/reports/T2314_Final_Report.pdf" target="_blank">
+            Final Report
           </Anchor>
         </Stack>
       </Box>
